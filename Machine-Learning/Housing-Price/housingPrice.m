@@ -7,6 +7,7 @@ x = [[x0] x];
 y = priceY;
 
 theta = pinv(x'*x)*(x'*y);
+
 h = theta(2)*x(:,2) + theta(1);
 
 plot(x(:,2), y, "*");
